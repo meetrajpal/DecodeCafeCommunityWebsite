@@ -1,0 +1,35 @@
+.logoimg{
+    max-width: 80%;
+}
+.navbardiv{
+    height: 100px;
+    /* background-color: #FEB941; */
+    /* border: 2px black solid; */
+}
+.maintext{
+    color: white;
+    font-size: 50px;
+}
+.navthings{
+    /* border-radius: 1%; */
+}
+.navbardropbutton{
+    color: #6DC5D1;
+}
+.maintop{
+    background-color: #DD761C;
+}
+@media (max-width: 500px) {
+    .lottieplayer{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .maintop{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1022px){
+    .navthings{
+        background-color: black;
+    }
+}
