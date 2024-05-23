@@ -1,35 +1,240 @@
-.logoimg{
+.logoimg {
     max-width: 80%;
 }
-.navbardiv{
+
+.navbardiv {
     height: 100px;
     /* background-color: #FEB941; */
     /* border: 2px black solid; */
 }
-.maintext{
+
+.bannertext {
     color: white;
     font-size: 50px;
 }
-.navthings{
+
+.navthings {
     /* border-radius: 1%; */
 }
-.navbardropbutton{
+
+.navbardropbutton {
     color: #6DC5D1;
 }
-.maintop{
+
+.bannertop {
     background-color: #DD761C;
 }
+
 @media (max-width: 500px) {
-    .lottieplayer{
+    .lottieplayer {
         max-width: 400px;
         max-height: 400px;
     }
-    .maintop{
+
+    .bannertop {
         margin-top: 20px;
     }
 }
-@media (max-width: 1022px){
-    .navthings{
+
+@media (max-width: 1022px) {
+    .navthings {
         background-color: black;
     }
+}
+
+.about-us {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.about-us p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-us .content {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text {
+    color: black;
+    text-align: center;
+}
+
+
+.folded-corner:hover .text {
+    visibility: visible;
+    color: #6DC5D1;
+    ;
+}
+
+.Services-tab {
+    padding: auto;
+}
+
+/*
+     nav link items
+   */
+.folded-corner {
+    padding: 60px 30px;
+    position: relative;
+    font-size: 100%;
+    text-decoration: none;
+    color: #999;
+    background: transparent;
+    transition: all ease .5s;
+    border: 1px solid #DD761C;
+}
+
+.folded-corner:hover {
+    background-color: #DD761C;
+}
+
+/*
+     paper fold corner
+   */
+
+.folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd;
+    transition: all ease .3s;
+}
+
+/*
+     on li hover make paper fold larger
+   */
+.folded-corner:hover:before {
+    background-color: #6DC5D1;
+    border-width: 0 50px 50px 0;
+    border-color: #eee #6DC5D1;
+
+}
+
+.service_tab_1 {
+    background-color: #6DC5D1;
+}
+
+.service_tab_1:hover .bi-icon-image {
+    color: #DD761C;
+    transform: scale(1.5);
+}
+
+
+.bi-icon-image {
+    color: #6DC5D1;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99, .82, .11, 1.41);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.card {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    border: none;
+}
+
+.card img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+}
+
+.neo-button:active {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff;
+}
+
+.bi-facebook {
+    color: #3b5998;
+}
+
+.bi-linkedin {
+    color: #0077b5;
+}
+
+.bi-google {
+    color: #dc4e41;
+}
+
+.bi-youtube {
+    color: #cd201f;
+}
+
+.bi-twitter {
+    color: #55acee;
 }
