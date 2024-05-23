@@ -238,3 +238,193 @@
 .bi-twitter {
     color: #55acee;
 }
+
+
+.card {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    border: none;
+}
+
+.card img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+}
+
+.neo-button:active {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-google {
+    color: #dc4e41;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+/* Navbar Animation */
+.navbar {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Banner Animation */
+.bannertop {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bannertext {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* About Us Animation */
+.about-us h2 {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.about-us p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-us .content {
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Service Animation */
+.serviceBanner h2 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service_tab_1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service_tab_1:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Animation */
+.team h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-buttons button {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
